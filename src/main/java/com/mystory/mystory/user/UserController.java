@@ -11,12 +11,11 @@ public class UserController {
 
 	@Autowired
 	UserService userService;
-	
+
 	@PostMapping("/api/v1/users")
-	 public GenericResponse  createUser(@RequestBody User user) {
+	public GenericResponse createUser(@RequestBody User user) {
 		userService.save(user);
 		return new GenericResponse("User Created");
 	}
-	
-	
+
 }

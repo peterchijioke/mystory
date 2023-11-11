@@ -6,20 +6,11 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class GenericResponse {
-private String message;
+	private String message;
 
-public GenericResponse(String message) {
-	
-	this.setMessage(message);
-}
+	public GenericResponse(String message) {
 
-public String getMessage() {
-	return message;
-}
-
-public void setMessage(String message) {
-	this.message = message;
-}
-
+		this.message = message;
+	}
 
 }
